@@ -1,0 +1,42 @@
+<!--
+tanguy merrien -  2022
+
+CHEF+ - HOMEPAGE
+
+This page is a menu page providing access to
+  - a link to the signup page for eventual beta access
+  - a link to the alpha access
+  - a link to the privacy notice
+
+-->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link type="text/css" href="{% static "notifyme/css/notifyme.css" %}" rel="stylesheet">
+</head>
+<body>
+  <div>
+    <div>
+      <h1 style="color: #a2e762; margin-top: 200px;">Chef+</h1>
+    </div>
+    <div>
+      <h2>A new cooking experience.<br><span style="color:#6ad300">Made for you.</span></h2>
+      <h2>Watch recipes from<br><span style="color:#49d2fb">amazing creators.</span></h2>
+      <h2>Discover <span style="color:#d791bb">new food</span><br>you'll love.</h2>
+      <h2><span style="color:#ff80a7">One subscription.</span><br>No ads.</h2>
+      <h2>Incredible flavours ―<br> <span style="color:#fd897f">powered by plants.</span></h2>
+    </div>
+    <div>
+      <a href="signup/" class="notifyme">Notify me</a>
+      <br>
+      <a class="earlyaccess">Early Access &#62</a>
+    </div>
+    <div>
+      <a class="privacy">Privacy &#62</a>
+    </div>
+  </div>
+</body>

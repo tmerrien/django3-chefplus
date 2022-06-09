@@ -1,0 +1,85 @@
+@font-face {
+  font-family: SF-Pro-Display-Bold;
+  src: url(fonts/SF-Pro-Display-Bold.otf);
+}
+
+@font-face {
+  font-family: SF-Pro;
+  src: url(fonts/SF-Pro.ttf);
+}
+
+body {
+  text-align: center;
+  margin-top: 70px;
+}
+
+h1 {
+  font-family: SF-Pro-Display-Bold;
+  font-size: 70px;
+}
+
+h2{
+  font-family: SF-Pro-Display-Bold;
+  font-size: 30px;
+}
+
+h3{
+  font-family: SF-Pro;
+  margin: 10px 50px;
+}
+
+.submit {
+  background-image: linear-gradient(144deg,#6dd405, #87de33 50%, #a2e760);
+  border: 0;
+  border-radius: 20px;
+  color: #FFFFFF;
+  font-family: SF-Pro-Display-Bold;
+  font-size: 20px;
+  padding: 16px 130px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 30px;
+  display: inline-block;
+}
+
+.notifyme {
+  background-image: linear-gradient(144deg,#6dd405, #87de33 50%, #a2e760);
+  border: 0;
+  border-radius: 50px;
+  color: #FFFFFF;
+  font-family: SF-Pro-Display-Bold;
+  font-size: 20px;
+  padding: 16px 55px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.earlyaccess {
+  margin-top: 15px;
+  color: #0caeff;
+  font-family: SF-Pro;
+  display: inline-block;
+}
+
+.privacy {
+  margin-top: 80px;
+  margin-bottom: 25px;
+  color: #dfe0e1;
+  font-family: SF-Pro;
+  display: inline-block;
+}
+
+.col-75 {
+  background-color: #f4f4f4;
+  color: #7e7e7e;
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+  margin-left: 15px;
+  margin-right: 15px;
+  border: 0;
+  border-radius: 10px;
+  padding: 10px 30px;
+  display: inline-block;
+}
