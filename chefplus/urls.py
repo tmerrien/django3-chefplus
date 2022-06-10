@@ -22,4 +22,6 @@ urlpatterns = [
     path('', views.NotifyMe),
     path('signup/', views.SignUp),
     path('thankyou/', views.Confirmation),
+    path('mailcx/', views.MailCx),
+    path('privacy/', views.Privacy),
 ]

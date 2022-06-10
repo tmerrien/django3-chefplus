@@ -16,13 +16,22 @@ This page is a form requesting for the user's email address before submitting it
   <link type="text/css" href="{% static "notifyme/css/notifyme.css" %}" rel="stylesheet">
 </head>
 <body>
+  {% load crispy_forms_tags %}
   <div>
     <div>
       <h3>Be the first to know when Chef+ is available.</h3><br>
-      <form>
-        <input class="col-75" type="text" id="email" name="email" placeholder="Email"><br>
+      <form method="POST">
+        {% csrf_token %}
+        {% for field in form.hidden_fields %}
+            {{ field }}
+        {% endfor %}
+
+        {% for field in form.visible_fields %}
+            {{ field }}
+        {% endfor %}
+        <br>
         <!-- The submit button needs to be linked to the next page with JS -->
-        <input class="submit" type="submit" value="Submit"><br>
+        <input class="submit" type="submit" value="Subscribe"><br>
       </form>
     </div>
   </div>
